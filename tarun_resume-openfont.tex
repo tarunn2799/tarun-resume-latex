@@ -1,0 +1,288 @@
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Deedy - One Page Two Column Resume
+    % LaTeX Template
+    % Version 1.2 (16/9/2014)
+    %
+    % Original author:
+    % Debarghya Das (http://debarghyadas.com)
+    %
+    % Original repository:
+    % https://github.com/deedydas/Deedy-Resume
+    %
+    % IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+    %
+    % This template uses several fonts not included with Windows/Linux by
+    % default. If you get compilation errors saying a font is missing, find the line
+    % on which the font is used and either change it to a font included with your
+    % operating system or comment the line out to use the default font.
+    % 
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % 
+    % TODO:
+    % 1. Integrate biber/bibtex for article citation under publications.
+    % 2. Figure out a smoother way for the document to flow onto the next page.
+    % 3. Add styling information for a "Projects/Hacks" section.
+    % 4. Add location/address information
+    % 5. Merge OpenFont and MacFonts as a single sty with options.
+    % 
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %
+    % CHANGELOG:
+    % v1.1:
+    % 1. Fixed several compilation bugs with \renewcommand
+    % 2. Got Open-source fonts (Windows/Linux support)
+    % 3. Added Last Updated
+    % 4. Move Title styling into .sty
+    % 5. Commented .sty file.
+    %
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %
+    % Known Issues:
+    % 1. Overflows onto second page if any column's contents are more than the
+    % vertical limit
+    % 2. Hacky space on the first bullet point on the second column.cx
+    %
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    
+    \documentclass[]{deedy-resume-openfont}
+    \usepackage{fancyhdr}
+    \usepackage{titlesec}
+    
+    
+     
+    \pagestyle{fancy}
+    \fancyhf{}
+    \usepackage{hyperref}
+    \begin{document}
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %
+    %     LAST UPDATED DATE
+    %
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \lastupdated
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %
+    %     TITLE NAME
+    %
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \namesection{Tarun}{Narayanan}{ 
+    \urlstyle{same}\href{mailto:tarunn2799@gmail.com}{tarunn2799@gmail.com} | +918438915089 | \urlstyle{same}\href{https://www.github.com/tarunn2799}{GitHub} \\
+    }
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %
+    %     COLUMN ONE
+    %
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    \begin{minipage}[t]{0.33\textwidth} 
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %     EDUCATION
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    \section{Education} 
+    
+    \descript{Anna University}
+    \descript{BEng in Computer Science}
+    \location{May 2021 | Chennai, India}
+    \sectionsep
+    
+    \descript{DAV Boys School}
+    \descript{High School}
+    \location{May 2017 | Chennai, India}
+    Conc. in Computer Science: 92\% \\
+    \sectionsep
+    
+    \descript{Bhavan's Rajaji 
+    Vidyashram} 
+    \location{Grad. May 2015 |  Chennai, India}
+    CGPA: 10/10  \\
+    
+    \sectionsep
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %     LINKS
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %     COURSEWORK
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    \section{Coursework}
+    \descript{Online Courses}
+    Stanford : Machine Learning: \\
+    DataCamp: Data Scientist in Python \\
+    NPTEL: Programming with C++  \\
+    Deep Learning w/Computer Vision \\
+    3Blue1Brown: Math Fundamentals
+    \sectionsep
+    
+    \descript{Undergraduate}
+    Data Structures \\
+    Object Oriented Programming w/ Java \\
+    Design and Analysis of Algorithms \\
+    Probability Statistics,  \\ 
+    and Queuing theory \\
+    Intro. to Bioinformatics \\
+    
+    
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %     SKILLS
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    \section{Skills}
+    \descript{Programming}
+    \location{Comfortable}
+    Python \textbullet{}   C++ \textbullet{} \LaTeX\ \textbullet{} SQL  \\ 
+    \location{Familiar:}
+    Java \textbullet{} HTML/CSS \textbullet{}  PHP \\
+    \location{Frameworks/ Libraries:}
+    Tensorflow \textbullet{} PyTorch \textbullet{} Django \\ \textbullet{} MongodB \textbullet{} AWS (learning) \\
+    \sectionsep
+    
+    \descript{Soft Skills}
+    \textbullet{} Public Speaking  \textbullet{} Leadership \\  \textbullet{} Team Player \textbullet{} Debate  
+    \sectionsep
+    
+    \section{Clubs \& Chapters}
+    
+    Founder @ Intellexa: AI club@REC \\
+    Tech. Head @ REC Debating Union \\
+    Co-Founder @ The Cue \\
+    Member @ Google Developers Group \\
+    
+    \sectionsep
+    \section{Side Projects}{
+   
+    \href{https://www.github.com/tarunn2799/mnist-gans-tf}{MNIST with GANs} \\
+    \href{https://www.github.com/tarunn2799/reddit-wallpaper-bot}{Reddit Wallpaper bot}     \\
+    \href{https://www.github.com/tarunn2799/Neon-Racer-with-OpenAI}{Neon Racer with OpenAI} \\
+    \href{https://www.github.com/tarunn2799/chatbot-mentalhealth}{Mental Health ChatBot} \\
+    
+    }
+    \sectionsep
+    
+    
+    
+    
+    
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %
+    %     COLUMN TWO
+    %
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    \end{minipage} 
+    \hfill
+    \begin{minipage}[t]{0.66\textwidth} 
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %     EXPERIENCE
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    \section{Experience}
+    \descript{ CodeFemme | Founder/ Head }
+    \location{May 2018 - Present | Chennai, IN}
+    \vspace{\topsep} % Hacky fix for awkward extra vertical space
+    \begin{tightemize}
+    \item CodeFemme provides a platform for women from all walks of life to enter STEM and gain a competitive edge.
+    \item We signed MoUs with 72 institutions in Chennai within a diminutive span of 2 months and  conducted Python workshops for both students and teachers. 
+    \item Worked with \textbf{Django} to build the CodeFemme website.
+    \end{tightemize}
+    \sectionsep
+    
+    
+    \descript{Data Science for India | Head of Operations }
+    \location{June 2017 – Sep 2017 | Chennai \& Bangalore, IN}
+     % Hacky fix for awkward extra vertical space
+    \begin{tightemize}
+    \item DSI is dedicated to introducing high school students to data science.
+    \item Took the responsibility of supervising the execution of the course at 21 schools in the Chennai region. Also assisted the team that developed the  curriculum for the Data Literacy workshops.
+    
+    
+    \end{tightemize}
+    \sectionsep
+    
+    
+    \descript{Skcript | Data Analytics Intern }
+    \location{April 2017 – June 2017 | Chennai, IN}
+    \begin{tightemize}
+    \item Assisted a team that worked on a cutting edge data analytics project to  discern actionable information from client financial data.
+    \end{tightemize}
+    \sectionsep
+    
+    
+    \descript{Kamachi Steels | IT Intern}
+    \location{May 2015 | Chennai, India}
+    \begin{tightemize}
+    \item Developed software to efficiently manage and regulate workers shifts in the
+    factory using \textbf{C++}.
+    \end{tightemize}
+    \sectionsep
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %     RESEARCH
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    \section{Projects \& Research }
+    \runsubsection{}
+    \descript{Neural Style Transfer | Research Project @ IIT Madras}
+    Created a model to perform neural style transfer with convnets in under 100 lines of code using \textbf{TensorFlow} and Intel® Nervana™ DevCloud. \textbf{\href{https://github.com/tarunn2799/Neural-Style-Transfer-in-100-lines}{GitHub}}
+    \sectionsep
+    
+    \descript{Optimize QoS Workflow Scheduling for E-Learning Services | Undergraduate Researcher}
+    
+    Worked on an approach under Dr.P.Rajeswari to optimise the algorithm by creating a model using \textbf{PyTorch} that produces an optimal choice of service based on the users requirements. A CSI grant was offered for the same.
+    \sectionsep
+    
+    \descript{Indian Signboard Translation using Computer Vision}
+    Model built using PyTorch, and performs real-time translation to English.
+    
+    \descript{Fetal Distress Classification based on Cardiotocography}
+    Classifies whether fetus is in distress or not using OpenCV.
+    
+    
+    \sectionsep
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %     AWARDS
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \section{Presentations}
+    \begin{tightemize}
+    \vspace{\topsep}
+    \item Guest Lecturer at IIT Madras on 'NumPy, Pandas and Data Visualization'
+    \item Youngest speaker at GDG Chennai - spoke about 'Thinking with code'
+    \item Guest speaker on the importance of the art of public speaking at VM.
+    
+    \end{tightemize}
+    \section{Awards} 
+    \begin{tabular}{rll}
+    2018	     & NA  & Gokulam Group Youth Entreprenuer Award\\
+    2018	     & 2\textsuperscript{nd}/50 teams  &AltSense Hackathon, IIT Madras
+    \\
+    2018	  & 2\textsuperscript{nd}/28 teams  & Inter-Collegiate Basketball tournament \\
+    2017     & Finalist & Stella Maris Memorial Parliamentary Debate  \\
+    2016 & 15\textsuperscript{th}/30k students & Comp. Society of India National Programming
+    Contest \\
+    2016 & 1\textsuperscript{st}/28 teams& State Champions in Basketball(Captained the team)
+    
+    
+    
+    \end{tabular}
+    \sectionsep
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %     PUBLICATIONS
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    
+    
+    \end{minipage} 
+    \end{document}  \documentclass[]{article}
